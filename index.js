@@ -46,21 +46,15 @@ console.log('Voce selecionou ' + tempoInformado + ' segundos.');
 microondas(opcao, tempoDeterminado);
 
 function microondas(tempoInformado, tempoDeterminado) {
-
-
-    
     if (tempoInformado < tempoDeterminado) {
         console.log('Tempo insuficiente');
-    
     } else if (tempoInformado == tempoDeterminado || tempoInformado < (tempoDeterminado * 2)) {
         console.log('Prato pronto, bom apetite!');
-    
-    
     } else if ((tempoInformado) >= (tempoDeterminado * 2) && tempoInformado < (3 * tempoDeterminado)) {
         console.log('Seu prato queimou.');
-    
-    } else
+    } else {
         console.log('kabum!!!');
+    }
 }
 
 
